@@ -25,3 +25,34 @@
   border-radius: 5px;
   width: 0%; /* Shuru mein 0% dikhaye */
 }
+.upsell-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.upsell-section h3 {
+  color: #007BFF;
+}
+.upsell-section button {
+  background: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+.next-page {
+  margin-top: 20px;
+  text-align: center;
+}
+.next-page button {
+  background: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

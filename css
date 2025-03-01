@@ -1,3 +1,12 @@
+.share-btn {
+  background: #25D366;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
 .tips-box {
   padding: 15px;
   background: #FFF3E0;

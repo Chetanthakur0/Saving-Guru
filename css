@@ -24,16 +24,10 @@
   background-color: #4CAF50;
   border-radius: 5px;
   width: 0%; /* Shuru mein 0% dikhaye */
+: 15px; /* Add spacing below heading */
 }
-.upsell-section {
-  margin-top: 20px;
-  padding: 15px;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-}
-.upsell-section h3 {
-  color: #007BFF;
+.upsell-section p {
+  margin: 10px 0; /* Add spacing between paragraphs */
 }
 .upsell-section button {
   background: #28a745;
@@ -43,6 +37,7 @@
   border-radius: 5px;
   margin: 10px 5px;
   cursor: pointer;
+  font-size: 16px; /* Increase font size */
 }
 .next-page {
   margin-top: 20px;
@@ -55,4 +50,5 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px; /* Increase font size */
 }

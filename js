@@ -9,7 +9,19 @@ function calculate() {
 }
 function calculate() {
   // ... previous code ...
+function calculate() {
+  // ... previous code ...
 
+  // Personalized Tips
+  let tipsHTML = "";
+  if (expenses > income * 0.5) {
+    tipsHTML += "⚠️ <strong>Apke expenses 50% se zyada hain!</strong> ₹" + (expenses - income*0.5) + " kam karein.<br>";
+  }
+  if (savings < 10000) {
+    tipsHTML += "💡 <strong>Savings badhane ke liye</strong> EMI options check karein.<br>";
+  }
+  document.getElementById("tips").innerHTML = tipsHTML;
+}
   // Pie Chart
   const ctx = document.getElementById('myChart');
   new Chart(ctx, {

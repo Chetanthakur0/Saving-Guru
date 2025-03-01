@@ -35,3 +35,7 @@ function calculate() {
     }
   });
 }
+function shareOnWhatsApp() {
+  const message = `Mera Monthly Savings: ₹${savings}. Apna bhi calculate karein: https://your-site.com`;
+  window.open(`https://wa.me/?text=${encodeURIComponent(message)}`);
+                          }

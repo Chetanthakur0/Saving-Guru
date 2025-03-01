@@ -1,70 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Savings Calculator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .container {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      max-width: 400px;
-      width: 100%;
-    }
-    h2 {
-      text-align: center;
-      color: #007BFF;
-    }
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-      background: #007BFF;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #0056b3;
-    }
-    .result {
-      margin-top: 20px;
-      padding: 10px;
-      background: #e9f5ff;
-      border-radius: 5px;
-      <!-- Progress Bar -->
-<div class="progress-container">
-  <div id="progress-bar" class="progress-bar"></div>
-</div>
-<p id="progress-text"></p>
-    <canvas id="myChart"></canvas>
-    }
-  </style>
+  <title>Saving Guru</title>
+  <link rel="stylesheet" href="styles.css"> <!-- CSS file link -->
+  <script src="script.js"></script> <!-- JavaScript file link -->
 </head>
 <body>
   <div class="container">
-    <button class="share-btn" onclick="shareOnWhatsApp()">
-  📱 WhatsApp Par Share Karein
-    </button>
     <h2>Savings Calculator</h2>
     <input type="number" id="income" placeholder="Monthly Income (₹)">
     <input type="number" id="expenses" placeholder="Monthly Expenses (₹)">
@@ -72,38 +14,24 @@
     <input type="number" id="months" placeholder="Timeframe (Months)">
     <button onclick="calculate()">Calculate</button>
     <div class="result" id="result"></div>
+
+    <!-- Upsell Section -->
+    <div class="upsell-section">
+      <h3>Apni Savings Ko Aur Badhayein!</h3>
+      <p>Agar aapko full financial planning sikhni hai, jaise ki 1 saal mein ₹1 crore kaise kamayein, toh hamara course dekhein:</p>
+      <button onclick="window.location.href='https://your-course-link.com'">Buy Now (Course)</button>
+      
+      <p>Ya ₹500 ki eBook khareedein: "21 Din Mein Crorepati Banne Ka Raasta":</p>
+      <button onclick="window.location.href='https://your-ebook-link.com'">Buy Now (eBook)</button>
+      
+      <p>Affiliate books se aur janein:</p>
+      <button onclick="window.location.href='https://your-affiliate-link.com'">Explore Books</button>
+    </div>
+
+    <!-- Next Page Button -->
+    <div class="next-page">
+      <button onclick="window.location.href='tips.html'">Agla Page Dekhein (Tips)</button>
+    </div>
   </div>
-
-  <script>
-    function calculate() {
-      const income = parseFloat(document.getElementById('income').value);
-      const expenses = parseFloat(document.getElementById('expenses').value);
-      const goal = parseFloat(document.getElementById('goal').value);
-      const months = parseFloat(document.getElementById('months').value);
-
-      const savings = income - expenses;
-      const totalSavings = savings * months;
-      const shortfall = goal - totalSavings;
-      const requiredSavings = goal / months;
-
-      let resultText = `Aap ₹${savings.toFixed(2)} mahine bacha sakte hain. `;
-      resultText += `${months} mahine mein aapka total savings ₹${totalSavings.toFixed(2)} hoga. `;
-      resultText += `Apne goal ₹${goal.toFixed(2)} tak pahunchne ke liye aapko ₹${requiredSavings.toFixed(2)} mahine bachane ki zarurat hai.`;
-
-      document.getElementById('result').innerText = resultText;
-    }
-  <div class="upsell-section">
-  <h3>Apni Savings Ko Aur Badhayein!</h3>
-  <p>Agar aapko full financial planning sikhni hai, jaise ki 1 saal mein ₹1 crore kaise kamayein, toh hamara course dekhein:</p>
-  <button onclick="window.location.href='https://your-course-link.com'">Buy Now (Course)</button>
-  
-  <p>Ya ₹500 ki eBook khareedein: "21 Din Mein Crorepati Banne Ka Raasta":</p>
-  <button onclick="window.location.href='https://your-ebook-link.com'">Buy Now (eBook)</button>
-  
-  <p>Affiliate books se aur janein:</p>
-  <button onclick="window.location.href='https://your-affiliate-link.com'">Explore Books</button>
-</div>
-
-<div class="next-page">
-  <button onclick="window.location.href='tips.html'">Agla Page Dekhein (Tips)</button>
-</div>
+</body>
+</html>
